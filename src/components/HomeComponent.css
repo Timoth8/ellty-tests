@@ -1,0 +1,115 @@
+.home-component {
+  width: 100%;
+  max-width: 560px;
+}
+
+.home-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.home-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.main-item {
+  padding-bottom: 16px;
+}
+
+.page-item {
+  padding: 16px 0;
+}
+
+.home-item-text {
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 8px 0;
+}
+
+.checkbox-wrapper {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.checkbox-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+.checkbox-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #d0d0d0;
+  border-radius: 6px;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.checkbox-input:checked + .checkbox-custom {
+  background-color: #4a90ff;
+  border-color: #4a90ff;
+}
+
+.checkbox-wrapper:hover .checkbox-custom {
+  border-color: #4a90ff;
+}
+
+.checkbox-input:checked + .checkbox-custom svg {
+  animation: checkmark 0.3s ease;
+}
+
+.home-done-button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 12px;
+  background: linear-gradient(180deg, #ffd644 0%, #f5c832 100%);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-done-button:hover {
+  background: linear-gradient(180deg, #ffe055 0%, #f6d143 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.home-done-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes checkmark {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
